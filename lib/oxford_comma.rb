@@ -5,7 +5,7 @@ def oxford_comma(array)
     array.insert(array.length - 1, " and ")
     return array.join
   else
-  array.each {|n| n += ", "}
+  array.map {|n| n += ", "}
   array.insert(array.length - 1, " and ")
   return array.join
   end
