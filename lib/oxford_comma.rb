@@ -1,4 +1,5 @@
 def oxford_comma(array)
-array.insert(array.length - 1, ", and ")
+while n < array.length
+array.insert(array.length, ", ")
 return array.join
 end
