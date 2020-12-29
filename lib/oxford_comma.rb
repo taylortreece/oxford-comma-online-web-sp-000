@@ -11,7 +11,6 @@ def oxford_comma(array)
     array[i - 1] = "#{n}, "
     i += 1
     end
-  array[array.length - 1] = array[-1]
   array.insert(array.length - 1, "and ")
   return array.join
   end
