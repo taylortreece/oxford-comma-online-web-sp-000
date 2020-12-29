@@ -5,10 +5,10 @@ def oxford_comma(array)
     array.insert(array.length - 1, " and ")
     return array.join
   else
-  i = 0
+  i = array.length
   array.each do |n|
     array[i] = "#{n}, "
-    i += 1
+    i += -1
   end
   array.insert(array.length - 1, "and ")
   return array.join
