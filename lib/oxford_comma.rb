@@ -9,8 +9,7 @@ def oxford_comma(array)
   array.each do |n|
     array[i - 1] = "#{n}, "
     i += 1
-    break if i == array[array.length]
-  end
+    end
   array[array.length - 1] = array[-1]
   array.insert(array.length - 1, "and ")
   return array.join
