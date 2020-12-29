@@ -12,6 +12,7 @@ def oxford_comma(array)
     next n if n == array[array.length]
     end
   array.insert(array.length - 1, "and ")
+  array.slice(array.length - 1, -2)
   return array.join
   end
 end
