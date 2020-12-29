@@ -8,6 +8,7 @@ def oxford_comma(array)
   i = array.length
   array.each do |n|
     array[i] = "#{n}, "
+    i--
   end
   array.insert(array.length - 1, "and ")
   return array.join
