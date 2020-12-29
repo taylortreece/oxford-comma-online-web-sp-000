@@ -6,7 +6,7 @@ def oxford_comma(array)
     return array.join
   else
   i = 1
-  break if i = array.length
+  break if i = array.length - 1
   array.each do |n|
     array[i - 1] = "#{n}, "
     i += 1
