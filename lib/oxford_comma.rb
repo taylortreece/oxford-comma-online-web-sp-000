@@ -11,7 +11,6 @@ def oxford_comma(array)
     i += 1
   end
   array.insert(array.length - 1, "and ")
-  array[array.length - 1] = n
   return array.join
   end
 end
